@@ -19,7 +19,7 @@ class Query extends React.Component {
     
     componentDidMount(){   
       if(this.props.q!=='')
-  {let url = 'http://newsapi.org/v2/everything?'+'q='+this.props.q+
+  {let url = 'https://newsapi.org/v2/everything?'+'q='+this.props.q+
   '&' +'pageSize='+pageSize+'&'+'apiKey='+apiKey;
   let req = new Request(url);
   fetch(req)
@@ -39,7 +39,7 @@ class Query extends React.Component {
 componentDidUpdate(prevProps,prevState){
     if(this.props.q!==''){
 if(prevProps.q!==this.props.q)
-{let url = 'http://newsapi.org/v2/everything?'+'q='+this.props.q+
+{let url = 'https://newsapi.org/v2/everything?'+'q='+this.props.q+
 '&' +'pageSize='+pageSize+'&'+'apiKey='+apiKey;
 let req = new Request(url);
 fetch(req)
@@ -60,7 +60,7 @@ fetch(req)
 
 newsArrayWithDate(){
   // if(this.state.sd!==''&this.state.ed!=='')
-  {let url = 'http://newsapi.org/v2/everything?'+'q='+this.state.q+
+  {let url = 'https://newsapi.org/v2/everything?'+'q='+this.state.q+
   '&'+'from='+ this.state.sd +'&'+'to='+this.state.ed+'&'+'sortBy='+this.state.sortBy+'&'+'pageSize='+pageSize+'&'+'apiKey='+apiKey;
   let req = new Request(url);
   fetch(req)
