@@ -19,7 +19,7 @@ class TopHeadline extends React.Component {
       let ct=this.props.country;
       let cat=this.props.category;
       // eslint-disable-next-line
-    let url = 'https://newsapi.org/v2/top-headlines?' +'country='+ct+'&category='+cat+
+    let url = 'https://cors-anywhere.herokuapp.com/'+'https://newsapi.org/v2/top-headlines?' +'country='+ct+'&category='+cat+
     '&' +'pageSize='+pageSize+'&'+'apiKey='+apiKey;
     let req = new Request(url);
     fetch(req)
@@ -42,7 +42,7 @@ class TopHeadline extends React.Component {
           let cat=this.props.category;
           let ct=this.props.country;
           // eslint-disable-next-line
-        let url = 'https://newsapi.org/v2/top-headlines?'+'country='+ct+'&category='+cat+
+        let url = 'https://cors-anywhere.herokuapp.com/'+'https://newsapi.org/v2/top-headlines?'+'country='+ct+'&category='+cat+
         '&'+'pageSize='+pageSize+'&'+'apiKey='+apiKey;
         let req = new Request(url);
         fetch(req)
