@@ -15,7 +15,6 @@ class TopHeadline extends React.Component {
       
      componentDidMount()
     {
-      console.log('tp' , this.props.country);
       let ct=this.props.country;
       let cat=this.props.category;
       // eslint-disable-next-line
